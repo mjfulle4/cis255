@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+	
+		<style>
+
+			body {
+				background-color: lightblue;
+			}
+
+			h1, h2 {
+				color: white;
+				text-align: center;
+			}
+			
+			h2 {   
+				color: maroon;
+				text-align: right;
+				margin-right: 40px;
+			}
+
+			p {
+				color: white;
+				/* This is a single-line comment */
+				text-align: left;
+			}
+			
+			#para1 {
+				text-align: center;
+				color: green;
+			}
+			
+			.center {
+				text-align: center;
+				color: red;
+			}
+
+			p.center {
+				text-align: center;
+				color: purple;
+			}
+			
+			p.large {
+				font-size: 300%;
+			}
+			
+		</style>
+		
+	</head>
+	
+	
+	<body>
+
+		<h1>My First CSS Example</h1>
+		
+		<h1 class="center">Red and center-aligned heading</h1>
+		
+		<h1 style="color:blue;margin-left:30px;text-align: left;">h1 header with in-line stylings</h1>
+		
+		<h2>H2 style heading (grouped with h1 & has its own style)</h1>
+		
+		<h1 class="center">This class="center" heading will not be purple</h1>
+		
+		<p class="center">But this class="center" paragraph will be purple.</p> 
+		
+		<p>This is a paragraph.</p>
+		
+		<p id="para1">Hello World!</p>
+		
+		<p>This paragraph is not affected by anything but generic p style.</p>
+		
+		<p class="center">Purple and center-aligned paragraph.</p>
+		
+		<p class="center large">This paragraph will be purple, center-aligned, and in a large font-size.</p> 
+
+	</body>
+
+</html>
