@@ -1,32 +1,100 @@
-<a href="https://github.com/mjfulle4/cis255.git">Github</a>
-<br />
-<br />
-<a href="svsu.html">SVSU website example</a>
-<br />
-<br />
-<a href="tables.html">tables example</a>
-<br />
-<br />
-<a href="css_sample.html">CSS example</a>
-<br />
-<br />
-<a href="file0918.html">more CSS stuff</a>
-<br />
-<br />
-<a href="css_exercise.html">*** CSS exercise from w3 schools ***</a>
-<br />
-<br />
-<a href="https://wordpress.com/view/mjfulle4.wordpress.com">My Wordpress blog</a>
-<br />
-<br />
-<a href="https://nagaffne.wordpress.com/2017/09/21/modern-vs-primitive-lifestyles/">contribution to X blog</a>
-<br />
-<br />
-<a href="https://clfrostblog.wordpress.com/2017/09/21/disc-golf-course-costs/">contribution to Y blog</a>
-<br />
-<br />
+<!-- code for list item formatting & menu item function/hiding copied from Neal McCarthy. -->
 
-<a href="https://svsu.edu">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Menu for CIS255">
+		<meta name="author" content="Michael Fuller">
 
-<img src= "http://svsu.edu//media/007svsucommon/SVSU_Email_Signature_logo.jpg" />
-</a>
+		<title>CIS 255 Menu - Michael Fuller</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<style>
+			body {
+				padding-top: 54px;
+			}
+			@media (min-width: 992px) {
+				body {
+					padding-top: 56px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">Michael Fuller</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a class="nav-link" href="#" onclick="return show('assignments','examples');">Assignments</a></li>
+					<li class="nav-item"><a class="nav-link" href="#" onclick="return show('examples','assignments');">Examples</a></li>
+					<li class="nav-item"><a class="nav-link" href="https://github.com/mjfulle4/cis255.git">My Github</a></li>
+				</ul>
+			</div>
+		</div>
+		</nav>
+
+		<!-- Page Content -->
+		<!-- Assigments -->
+		<div class="container assignments" id="assignments">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+				<h1 class="mt-5">CIS 255 Assignments</h1>
+				<ul class="list-group" style="text-align: center;">
+					<li class="list-group-item"><a href="svsu.html">01 HTML</a></li>
+					<li class="list-group-item"><a href="css_exercise.html">02 CSS Exercise</a></li>
+					<li class="list-group-item"><a href="https://wordpress.com/view/mjfulle4.wordpress.com">02a WordPress Blog (My blog)</a></li>
+					<li class="list-group-item"><a href="https://nagaffne.wordpress.com/2017/09/21/modern-vs-primitive-lifestyles/">02a WordPress Blog (Post 1)</a></li>
+					<li class="list-group-item"><a href="https://clfrostblog.wordpress.com/2017/09/21/disc-golf-course-costs/">02a WordPress Blog (Post 2)</a></li>
+					<li class="list-group-item"><a href="bootstrap1.html">03 Bootstrap Exercise</a></li>
+					<li class="list-group-item"><a href="bootstrap_EX03.html">03 Bootstrap Program</a></li>
+					<li class="list-group-item"><a href="wereSquirrel.html">04 JavaScript WereSquirrel Event Correlation Program</a></li>
+				</ul>
+				</div>
+			</div>
+		</div> 
+		<!-- End Assignments -->
+
+		<!-- Examples -->
+		<div class="container examples" id="examples" style="display: none">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+				<h1 class="mt-5">CIS 255 Examples</h1>
+				<ul class="list-group" style="text-align: center;">
+                    <li class="list-group-item"><a href="tables.html">Calculator example</a></li>
+                    <li class="list-group-item"><a href="css_sample.html">CSS example</a></li>
+                    <li class="list-group-item"><a href="file0918.html">more CSS stuff</a></li>
+					<li class="list-group-item"><a href="js01.html">JavaScript example</a></li>
+					<li class="list-group-item"><a href="courses.html">Courses example</a></li>
+				</ul>
+				</div>
+			</div>
+		</div> 
+		<!-- End Examples -->
+
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/popper/popper.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- JS to toggle bewteen elements -->
+		<script>
+			function show(shown, hidden) {
+  				document.getElementById(shown).style.display='block';
+  				document.getElementById(hidden).style.display='none';
+  				return false;
+			}
+		</script>
+	</body>
+</html>
