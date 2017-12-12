@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+<html> 
+
+	<head> 
+	
+		<title>Basic mobile app</title> 
+		<meta charset="utf-8" />  
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />  
+		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+		
+	</head> 
+	
+	<body> 
+	
+		<!-- Home -->
+		<div data-role="page" id="index">
+			<header data-role="header">
+				<h1>G.O.A.T.s</h1>
+			</header>
+			<div data-role="content">
+				<h3>Talkin' bout GOATs</h3>
+				<a href="#" class="image"><img src="images/goat.jpg" alt="" /></a>
+				<p>Who da baaaaahhhhhdest?</p>
+				<p><a href="#jumpman23" data-role="button" data-theme="a">Jumpman 23</a></p> 
+				<p><a href="#tb12" data-role="button" data-theme="b">Tom Brady</a></p> 
+				<p><a href="#bolt" data-role="button" data-theme="c">Usain Bolt</a></p>
+				<p><a href="#rowdy" data-role="button" data-theme="d">Rowdy Ronda Rousey</a></p>
+				<p><a href="#bonds" data-role="button" data-theme="a">Barry Bonds</a></p>
+				<!--
+				<p><a data-inline="true" href="#about" data-role="button" data-theme="e">About us</a></p> 
+				-->
+			</div>
+
+			<footer data-role="footer">
+				<h2>&copy; who da G.G.O.A.T?</h2>
+			</footer>
+			
+		</div>
+
+		<!-- Jordan -->
+		<div data-role="page" id="jumpman23" data-add-back-btn="true">
+			<header data-role="header">
+				<a href="index.html" data-icon="gear" data-theme="b" class="ui-btn-right">Settings</a>
+				<h1>Michael Jordan</h1>
+			</header>
+
+			<div data-role="content">
+				<p>His airness = greatest GOAT?</p>
+				<a href="#" class="image"><img src="images/jordan.jpg" alt="" /></a>
+				<p>Wait... go back to the list of <a href="#index" data-direction="reverse">G.O.A.T.s</a>.</p>
+			</div>
+			<footer data-role="footer" class="ui-body-b">
+			  <div data-role="navbar">
+				<ul>
+				<li><a href="#tb12" data-role="button" data-theme="b">Tom Brady</a></li>
+				<li><a href="#bolt" data-role="button" data-theme="c">Usain Bolt</a></li>
+				<li><a href="#rowdy" data-role="button" data-theme="d">Rowdy Ronda Rousey</a></li>
+				<li><a href="#bonds" data-role="button" data-theme="a">Barry Bonds</a></li>	
+				</ul>
+			  </div>
+			  <h2>&copy; who da G.G.O.A.T?</h2>
+			</footer>
+		</div>
+		
+		<!-- Brady -->
+		<div data-role="page" id="tb12" data-add-back-btn="true">
+			<header data-role="header">
+				<a href="index.html" data-icon="gear" data-theme="b" class="ui-btn-right">Settings</a>
+				<h1>Tom Brady</h1>
+			</header>
+
+			<div data-role="content">
+				<p>Touchdown Tommy = greatest GOAT?</p>
+				<a href="#" class="image"><img src="images/tb12.jpg" alt="" /></a>
+				<p>Wait... go back to the list of <a href="#index" data-direction="reverse">G.O.A.T.s</a>.</p>
+			</div>
+			<footer data-role="footer" class="ui-body-b">
+			  <div data-role="navbar">
+				<ul>
+				<li><a href="#jumpman23" data-role="button" data-theme="a">Jumpman 23</a></li> 
+				<li><a href="#bolt" data-role="button" data-theme="c">Usain Bolt</a></li>
+				<li><a href="#rowdy" data-role="button" data-theme="d">Rowdy Ronda Rousey</a></li>
+				<li><a href="#bonds" data-role="button" data-theme="a">Barry Bonds</a></li>	
+				</ul>
+			  </div>
+			  <h1>&copy; who da G.G.O.A.T?</h1>
+			</footer>
+		</div>
+		
+		<!-- Usain Bolt -->
+		<div data-role="page" id="bolt" data-add-back-btn="true">
+			<header data-role="header">
+				<a href="index.html" data-icon="gear" data-theme="b" class="ui-btn-right">Settings</a>
+				<h1>Usain Bolt</h1>
+			</header>
+
+			<div data-role="content">
+				<p>World's fastest man = greatest GOAT?</p>
+				<a href="#" class="image"><img src="images/bolt.jpg" alt="" /></a>
+				<p>Wait... go back to the list of <a href="#index" data-direction="reverse">G.O.A.T.s</a>.</p>
+			</div>
+			<footer data-role="footer" class="ui-body-b">
+			  <div data-role="navbar">
+				<ul>
+				<li><a href="#jumpman23" data-role="button" data-theme="a">Jumpman 23</a></li>
+				<li><a href="#tb12" data-role="button" data-theme="b">Tom Brady</a></li>				
+				<li><a href="#rowdy" data-role="button" data-theme="d">Rowdy Ronda Rousey</a></li>
+				<li><a href="#bonds" data-role="button" data-theme="a">Barry Bonds</a></li>	
+				</ul>
+			  </div>
+			  <h1>&copy; who da G.G.O.A.T?</h1>
+			</footer>
+		</div>
+		
+		<!-- Rowdy Rousey -->
+		<div data-role="page" id="rowdy" data-add-back-btn="true">
+			<header data-role="header">
+				<a href="index.html" data-icon="gear" data-theme="b" class="ui-btn-right">Settings</a>
+				<h1>Rowdy Ronda Rousey</h1>
+			</header>
+
+			<div data-role="content">
+				<p>Most impactful UFC fighter = greatest GOAT?</p>
+				<a href="#" class="image"><img src="images/rowdy.jpg" alt="" /></a>
+				<p>Wait... go back to the list of <a href="#index" data-direction="reverse">G.O.A.T.s</a>.</p>
+			</div>
+			<footer data-role="footer" class="ui-body-b">
+			  <div data-role="navbar">
+				<ul>
+				<li><a href="#jumpman23" data-role="button" data-theme="a">Jumpman 23</a></li>
+				<li><a href="#tb12" data-role="button" data-theme="b">Tom Brady</a></li>
+				<li><a href="#bolt" data-role="button" data-theme="c">Usain Bolt</a></li>
+				<li><a href="#bonds" data-role="button" data-theme="a">Barry Bonds</a></li>	
+				</ul>
+			  </div>
+			  <h1>&copy; who da G.G.O.A.T?</h1>
+			</footer>
+		</div>
+		
+		<!-- Barry Bonds -->
+		<div data-role="page" id="bonds" data-add-back-btn="true">
+			<header data-role="header">
+				<a href="index.html" data-icon="gear" data-theme="b" class="ui-btn-right">Settings</a>
+				<h1>Barry Bonds</h1>
+			</header>
+
+			<div data-role="content">
+				<p>Homerun king = greatest GOAT?</p>
+				<a href="#" class="image"><img src="images/barry.jpg" alt="" /></a>
+				<p>Wait... go back to the list of <a href="#index" data-direction="reverse">G.O.A.T.s</a>.</p>
+			</div>
+			<footer data-role="footer" class="ui-body-b">
+			  <div data-role="navbar">
+				<ul>
+				<li><a href="#jumpman23" data-role="button" data-theme="a">Jumpman 23</a></li>
+				<li><a href="#tb12" data-role="button" data-theme="b">Tom Brady</a></li>				
+				<li><a href="#rowdy" data-role="button" data-theme="d">Rowdy Ronda Rousey</a></li>
+				<li><a href="#bolt" data-role="button" data-theme="c">Usain Bolt</a></li>
+				</ul>
+			  </div>
+			  <h1>&copy; who da G.G.O.A.T?</h1>
+			</footer>
+		</div>
+
+
+	</body>
+	
+</html>
+<!-- 
+INSTRUCTIONS
+
+1. copy The Standard HTML Template code from: 
+https://www.hongkiat.com/blog/build-websites-apps-jquery-mobile/
+
+2. optional: read All You Need to Know About the HTML5 Data Attribute
+https://webdesign.tutsplus.com/tutorials/all-you-need-to-know-about-the-html5-data-attribute--webdesign-9642
+
+3. copy the Constructing the Body Content code from:
+https://www.hongkiat.com/blog/build-websites-apps-jquery-mobile/
+
+4. test the code in your browser
+if it does not work you might have to change all instances of "http:" to "https:"
+
+5. add 4 more buttons and use the other themes "a" through "e", like this:
+    <p><a href="#about" data-role="button" data-theme="b">About us</a></p>
+
+6. add attribute-value to your last button: data-inline="true" 
+
+7. copy Top Bar Buttons code from: 
+https://www.hongkiat.com/blog/build-websites-apps-jquery-mobile/
+this code will add "Back" button to About page 
+
+8. copy Footer Navigation code to your About page from:
+https://www.hongkiat.com/blog/build-websites-apps-jquery-mobile/
+	
+more ideas...
+http://view.jquerymobile.com/master/demos/
+-->

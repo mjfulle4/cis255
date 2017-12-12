@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <title>SVSU Mobile App</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Noto+Sans:400,400i,700,700i" rel="stylesheet">
+	<link href="mjfulle4.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="hy-drawer.js"></script>
+
+    <style>.hy-drawer-content { color:#fff; background:#0769ad; } aside a { color: #fff; }</style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main>
+		<header>
+		<a id="menuEl" href="#drawerEl" style="float:left; color:white; font-weight:bold;"><span class="sr-only">Menu</span></a>
+			<img src="SVSU.png" height="55px" width="55px" style="text-align: center;">
+		<button type="submit" class="home" style="float:right;" onclick="location.href='index.html'"><a class="button_txt">CSIS Home</a></button>
+		</header>
+		<h1>Jesse Vollmar & Brad Koch-Home grown success</h1>
+
+
+		<p>Brad Koch, 2011, B.S., and Jesse Vollmar, 2011, B.S.,&nbsp;weren&rsquo;t typical college students. As incoming&nbsp;freshmen at SVSU, the two were already running&nbsp;a successful IT consulting business. Since their&nbsp;2011 graduation, both with a Bachelor of Science&nbsp;in computer science, they&rsquo;ve also &ldquo;graduated&rdquo; from their&nbsp;initial business and have started a new company, FarmLogs,&nbsp;which has attracted a lot of investor interest as well as $5<br />million in venture capital.<br /><img src="farmlogs.jpg" alt="" style="border : 5; padding : 10px 10px 10px 10px ; margin : 15x 15x 15x 15x; display: block; float : left;" />&ldquo;Proximity was a key factor [in choosing SVSU],&rdquo; Jesse said.&nbsp;The financial assistance each received was also helpful. As&nbsp;co-valedictorians of their graduating class at Union-Sebewaing&nbsp;High School in Michigan&rsquo;s Thumb, both received the&nbsp;President&rsquo;s Scholarship at SVSU, which covered their tuition&nbsp;and select fees for four years. <br />&ldquo;Brad and I started our company in high school,&rdquo; Jesse said, &ldquo;and it was taking off. I knew I wanted to continue operating it while obtaining a degree, so moving [too far] away [from home] wasn&rsquo;t an option. SVSU was in the right place.&rdquo;<br />Brad agreed, adding that the scholarship gave them the financial security to channel more effort into their business. <br />&ldquo;We were able to learn while working,&rdquo; he said. &ldquo;And we could apply things we were learning to actual clients.&rdquo;</p>
+		<h3><strong>Seed of an Idea</strong></h3>
+		<p>Having grown up in farming communities, Brad and Jesse&nbsp;were familiar with the challenges farmers face, including a&nbsp;lack of technological sophistication in agriculture generally.&nbsp;While their IT consulting business was successful, both Jesse&nbsp;and Brad recognized they could do more.<br />&ldquo;With our consulting business, we were building software&nbsp;for an agricultural client,&rdquo; Brad said. &ldquo;We realized there was a&nbsp;huge need in the agricultural sector and nobody was building&nbsp;software for farmers.&rdquo;<br />&ldquo;The light bulb moment came at my family&rsquo;s farm,&rdquo; Jesse&nbsp;added. &ldquo;I was in the office, and another farmer asked me if&nbsp;we were ready with our software. We weren&rsquo;t even creating&nbsp;software yet, but that was the moment we decided we could&nbsp;make it successful.&rdquo;<br />&ldquo;It&rdquo; would be FarmLogs, a web application for farm&nbsp;management. <br />Jesse said he and Brad &ldquo;daydreamed&rdquo; about the project for&nbsp;about six months before they began working on the app. The&nbsp;product and the process were made better after participating&nbsp;in Y Combinator, a program that provides seed money, advice, networking and guidance to business startups, especially those in the technology sector.</p>
+		<p>&ldquo;We went full-scale into FarmLogs on Jan. 3, 2012, the first&nbsp;day of Y Combinator,&rdquo; Jesse said. From there, the product and&nbsp;the business grew nicely, and today the app is being used by&nbsp;farmers.<br />From their company headquarters in Ann Arbor, Brad and&nbsp;Jesse see a future ripe with possibility.<br />&ldquo;Ag needs data technology,&rdquo; Brad said. &ldquo;Existing players&nbsp;weren&rsquo;t providing it. We&rsquo;re here to make sure that changes;&nbsp;we&rsquo;re bringing people the software they need.&rdquo;<br />&ldquo;There are decades of innovation to be built,&rdquo; added Jesse.<br />&ldquo;We&rsquo;ll be working on FarmLogs for a very long time.&rdquo;</p>
+		</br>
+
+      </main>
+
+      <aside id="drawerEl" data-prevent-default="true" data-mouse-events="true">
+  <ul>
+    <li><a href="index.html">CSIS Home</a></li>
+	<li><a href="csis_about.html">About CSIS</a></li>
+    <li><a href="csis_mission.html">CSIS Mission</a></li>
+    <li><a href="csis_seq.html">CIS Course Sequence</a></li>
+    <li><a href="cs_seq.html">CS Course Sequence</a></li>
+	<li><a href="csis_master.html">CSIS Master's Program</a></li>
+    <li><a href="csis_faculty.html">Faculty</a></li>
+    <li><a href="csis_cis.html">Computer Information Systems</a></li>
+	<li><a href="csis_whystudy.html">Why Study CSIS?</a></li>
+	<li><a href="csis_alumni.html">CSIS Alumni</a></li>
+	<li><a href="csis_shop.html">CSIS software shop</a></li>
+  </ul>
+      </aside>
+    </div>
+	<footer>
+    <button type="submit" class="nextpage" style="float:right;" onclick="location.href='csis_shop.html'"><a class="button_txt">next page</a></button>
+	© SVSU Mobile
+	</footer>
+
+    <script>
+      var ua = navigator.userAgent.toLowerCase();
+      var isSafari = ua.indexOf('safari') > 0 && ua.indexOf('chrome') < 0;
+      var isMobileSafari = isSafari && ua.indexOf('mobile') > 0;
+
+      $('#drawerEl').drawer({
+        range: isMobileSafari ? [35, 150] : [0, 150],
+        threshold: isSafari ? 0 : 10,
+      })
+      .on('transitioned.hy.drawer', function(e) {
+        console.log('hy-drawer transitioned to', e.detail);
+      });
+
+      $('#menuEl').click(function (e) {
+        e.preventDefault();
+        $('#drawerEl').drawer('toggle');
+      });
+    </script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </body>
+</html>

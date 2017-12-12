@@ -1,0 +1,116 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <title>SVSU Mobile App</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Noto+Sans:400,400i,700,700i" rel="stylesheet">
+	<link href="mjfulle4.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="hy-drawer.js"></script>
+	
+
+    <style>.hy-drawer-content { color:#fff; background:#0769ad; } aside a { color: #fff; }</style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main>
+		<header>
+		<a id="menuEl" href="#drawerEl" style="float:left; color:white; font-weight:bold;"><span class="sr-only">Menu</span></a>
+			<img src="SVSU.png" height="55px" width="55px" style="text-align: center;">
+		<button type="submit" class="home" style="float:right;" onclick="location.href='index.html'"><a class="button_txt">CSIS Home</a></button>
+		</header>
+		
+			<h2 style="text-align: center">Hardware & software order Form</h2>
+
+				<div onload='hideTotal()'>
+					<fieldset style="text-align: center">						
+						<form action="" id="orderform" onsubmit="return false;">
+						
+						<select id="hardware" name='hardware' onchange="calculateTotal()">
+							<option value="None">Select Hardware</option>
+							<option value="hdmi">HDMI cable ($10)</option>
+							<option value="mouse">Wireless mouse ($55)</option>
+							<option value="gpu">Graphics card ($250)</option>
+						</select>
+						<select id="software" name='software' onchange="calculateTotal()">
+							<option value="None">Select Software</option>
+							<option value="virus">Anti-virus ($60)</option>
+							<option value="windows">Windows 10 ($120)</option>
+							<option value="apple">Mac OS ($130)</option>
+						</select>
+						<div id="totalPrice"></div>
+					</fieldset>
+				</div>
+				
+				<h2 style="text-align: center">SVSU campus map</h2>
+				<img src="map.jpg" height="100%" width="100%" style="text-align: center;">		
+				</br>
+				
+				<h2 style="text-align: center";>Bitcoin price tracker</h2>
+				<div id="coindesk-widget" data-size="mpu" data-align="center"></div>
+				<script type="text/javascript" src="//widget.coindesk.com/bpiticker/coindesk-widget.min.js"></script>
+				</br>
+
+
+		<br />
+
+      </main>
+
+      <aside id="drawerEl" data-prevent-default="true" data-mouse-events="true">
+  <ul>
+    <li><a href="index.html">CSIS Home</a></li>
+	<li><a href="csis_about.html">About CSIS</a></li>
+    <li><a href="csis_mission.html">CSIS Mission</a></li>
+    <li><a href="csis_seq.html">CIS Course Sequence</a></li>
+    <li><a href="cs_seq.html">CS Course Sequence</a></li>
+	<li><a href="csis_master.html">CSIS Master's Program</a></li>
+    <li><a href="csis_faculty.html">Faculty</a></li>
+    <li><a href="csis_cis.html">Computer Information Systems</a></li>
+	<li><a href="csis_whystudy.html">Why Study CSIS?</a></li>
+	<li><a href="csis_alumni.html">CSIS Alumni</a></li>
+	<li><a href="csis_shop.html">CSIS software shop</a></li>
+  </ul>
+      </aside>
+    </div>
+	<footer>
+    © SVSU Mobile
+	</footer>
+
+    <script>
+      var ua = navigator.userAgent.toLowerCase();
+      var isSafari = ua.indexOf('safari') > 0 && ua.indexOf('chrome') < 0;
+      var isMobileSafari = isSafari && ua.indexOf('mobile') > 0;
+
+      $('#drawerEl').drawer({
+        range: isMobileSafari ? [35, 150] : [0, 150],
+        threshold: isSafari ? 0 : 10,
+      })
+      .on('transitioned.hy.drawer', function(e) {
+        console.log('hy-drawer transitioned to', e.detail);
+      });
+
+      $('#menuEl').click(function (e) {
+        e.preventDefault();
+        $('#drawerEl').drawer('toggle');
+      });
+    </script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="mjfulle4.js"></script>
+  </body>
+</html>

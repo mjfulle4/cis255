@@ -1,21 +1,24 @@
 <!doctype html>
+<link rel="shortcut icon" href="images/favicon.png" />
 <script src="code/jacques_journal.js"></script>
 <script src="code/chapter/04_data.js"></script>
 
-Correlations greater than +/- 0.1 written to document & console:
-<br />
-<br />
+<body style ="background-color: black; color: white">
 
-<body><script>
+<h2 style="color:yellow">Correlations greater than +/- 0.1 written to document & console:</h2>
+
+<script>
 for (var event in correlations) {
   var correlation = correlations[event];
   if (correlation > 0.1 || correlation < -0.1) {
     console.log(event + ": " + correlation);
 	document.write(event + ": " + correlation);
 	document.write("<br>");
+	document.write("<br>");
 	}
 }
 // → brushed teeth: -0.3805211953
 // → work:          -0.1371988681
 // → reading:        0.1106828054
-</script></body>
+</script>
+</body>

@@ -1,0 +1,37 @@
+.home{
+	display:block; 
+	padding:0rem 2rem;
+	margin:10px;
+	color:white;
+	font-size:20px;
+	background-color: #0000FF;
+	border-radius: 12px;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.nextpage{
+	display:block; 
+	padding:0rem 2rem;
+	margin:10px;
+	color:white;
+	font-size:20px;
+	background-color: #0000FF;
+	border-radius: 12px;
+	-webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.home:hover{
+    background-color: #4B0082;
+    color: white;
+}
+
+.nextpage:hover{
+    background-color: #4B0082;
+    color: white;
+}
+
+.button_txt{
+	color: white;
+}

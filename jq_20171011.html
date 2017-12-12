@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+		
+			<style>
+				<title>cis255 - jQuery - Remove HTML Table Row</title>
+
+				table {
+				  font-family: arial, sans-serif;
+				  border-collapse: collapse;
+				  width: 75%;
+				}
+				td,
+				th {
+				  border: 1px solid #dddddd;
+				  text-align: left;
+				  padding: 8px;
+				}
+				th {
+				  background-color: #ccd;
+				}
+				tr:nth-child(even) {
+				  background-color: #dddddd;
+				}
+				tr:nth-child(odd) {
+				  background-color: #ddeedd;
+
+				}
+				
+			</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>cis255 - jQuery - Remove HTML Table Row</h1>
+			<h2>HTML Markup</h2>
+			<p>To get started, create a standard HTML table on the page. For this demo, our table has 3 columns: Name, Age and Country (along with some random data). The table row/column will be deleted upon click of the row/column itself.<p>
+			<br />
+			<table id="tblData">
+				<tbody>
+					<tr>
+						<th>Name</th>
+						<th>Age</th>
+						<th>Country</th>
+						<th>Action</th>
+					</tr>
+					<tr>
+						<td>Maria Anders</td> 
+						<td>30</td>
+						<td>Germany</td>
+						<td><input class="delete" type="button" value="Delete" /></td>
+					</tr>
+					<tr>
+						<td>Francisco Chang</td>
+						<td>24</td>
+						<td>Mexico</td>
+						<td><input class="delete" type="button" value="Delete" /></td>
+					</tr>
+					<tr>
+						<td>Roland Mendel</td>
+						<td>100</td>
+						<td>Austria</td>
+						<td><input class="delete" type="button" value="Delete" /></td>
+					</tr>
+					<tr>
+						<td>Helen Bennett</td>
+						<td>28</td>
+						<td>UK</td>
+						<td><input class="delete" type="button" value="Delete" /></td>
+					</tr>
+					<tr>
+						<td>Yoshi Tannamuri</td>
+						<td>35</td>
+						<td>Canada</td>
+						<td><input class="delete" type="button" value="Delete" /></td>
+					</tr>
+					<tr>
+						<td>Giovanni Rovelli</td>
+						<td>46</td>
+						<td>Italy</td>
+						<td><input class="delete" type="button" value="Delete" /></td>
+					</tr>
+					<tr>
+						<td>Alex Smith</td>
+						<td>59</td>
+						<td>USA</td>
+						<td><input class="delete" type="button" value="Delete" /></td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</div>
+		<script>
+			$(document).ready(function() {
+/*				$("#tblData tr:has(td)").click(function() {
+					//$(this).remove();
+					
+			}) */
+			
+				$("#tblData tr:has(td)").on('click', '.delete', function() {
+					$(this).fadeOut(500, function() {
+					$(this).closest('tr').remove();
+				});
+			});
+			
+				$("#tblData tr:has(th)").mouseover(function(e) {
+				$(this).css("cursor", "pointer");
+				});
+				$("#tblData th").click(function() {
+					var iIndex = $(this).closest("th").prevAll("th").length;
+					$(this).parents("#tblData").find("tr").each(function() {
+						$(this).find("td:eq(" + iIndex + ")").remove();
+						$(this).find("th:eq(" + iIndex + ")").remove();
+					});
+				});
+				
+				$('#tblData tr:first').append("<th>Action</th>"); //makes headers
+				 $('#tblData').find('tr').each(function(){ //makes table rows
+					
+					$(this).find('td').eq(3).after('<td><input class="insert" type="button" value="Insert" /></td>');
+
+					
+			   });
+				$("#tblData").on('click', '.insert', function() {
+					$(this).closest('tr').before('<tr><td>Agent Smith</td><td>101</td><td>Matrix</td><td><input class="delete" type="button" value="Delete" /></td><td><input class="insert" type="button" value="Insert" /></td><</tr>');		
+				})
+			});
+			
+			
+			
+		</script>
+		
+	</body>
+
+</html>
